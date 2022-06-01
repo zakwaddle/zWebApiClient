@@ -1,0 +1,9 @@
+README.md
+setup.py
+zWebApiClient/WebApiClient.py
+zWebApiClient/__init__.py
+zWebApiClient.egg-info/PKG-INFO
+zWebApiClient.egg-info/SOURCES.txt
+zWebApiClient.egg-info/dependency_links.txt
+zWebApiClient.egg-info/requires.txt
+zWebApiClient.egg-info/top_level.txt
