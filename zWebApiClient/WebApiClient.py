@@ -20,7 +20,9 @@ class WebApiAuth(AuthBase):
             'Authorization': f'Bearer {self.token}',
         })
         return request
-
+    
+    def __repr__(self):
+        return f"{__class__.__name__}"
 
 class WebRequest:
     """
