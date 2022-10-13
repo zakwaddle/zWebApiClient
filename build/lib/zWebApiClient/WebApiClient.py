@@ -20,9 +20,7 @@ class WebApiAuth(AuthBase):
             'Authorization': f'Bearer {self.token}',
         })
         return request
-    
-    def __repr__(self):
-        return f"{__class__.__name__}"
+
 
 class WebRequest:
     """
@@ -130,10 +128,6 @@ class WebApiClient:
         req.send()
         req = self.post_flight(req)
         return req
-
-    def rget(self, url, **kwargs):
-        params = {'auth': self.auth, **kwargs}
-        return self.__execute(WebRequest('GET', url, params))
 
     def get(self, *route_bits, **kwargs):
         req = self.__create_request('GET', *route_bits, **kwargs)
