@@ -101,7 +101,7 @@ Temporary Items
 
 ### Python template
 # Byte-compiled / optimized / DLL files
-/__pycache__/
+/__pycache__
 *.cpython-38.pyc
 */*.cpython-38.pyc
 
