@@ -246,3 +246,5 @@ cython_debug/
 /.idea/vcs.xml
 /.idea/misc.xml
 *.pyc
+zWebApiClient/__pycache__/WebApiClient.cpython-38.pyc
+zWebApiClient/__pycache__/__init__.cpython-38.pyc
