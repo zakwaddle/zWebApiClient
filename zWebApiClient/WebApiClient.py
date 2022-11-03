@@ -24,6 +24,7 @@ class WebApiAuth(AuthBase):
     def __repr__(self):
         return f"{__class__.__name__}"
 
+
 class WebRequest:
     """
     WebRequest is a class to contain both a request to a resource, and it's associated response
@@ -132,6 +133,13 @@ class WebApiClient:
         return req
 
     def rget(self, url, **kwargs):
+        """
+        Send a GET request to provided url, without prepending the base_url attribute.
+        Sometimes useful for returned download urls, or pagination
+        :param url:
+        :param kwargs:
+        :return:
+        """
         params = {'auth': self.auth, **kwargs}
         return self.__execute(WebRequest('GET', url, params))
 
