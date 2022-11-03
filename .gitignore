@@ -103,6 +103,8 @@ Temporary Items
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.cpython-38.pyc
+*/*.cpython-38.pyc
+
 *.py[cod]
 *.pyc
 *$py.class
